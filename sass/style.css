@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  background-color: white;
+  padding: 0px 100px;
+  padding-left: 130px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid grey;
+}
+header nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 250px;
+       column-gap: 250px;
+  padding: 20px 0px;
+}
+header nav .item1 h2 {
+  font-size: 30px;
+}
+header nav .item2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  color: grey;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  font-size: 18px;
+}
+header nav .item2:focus-visible {
+  outline: none;
+  border: 1px solid grey;
+}
+header nav .item2 button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+header nav .item2 button i {
+  color: gray;
+  font-size: 16px;
+}
+header nav .item2 #search {
+  width: 210px;
+  font-size: 18px;
+  color: grey;
+  border: none;
+}
+header nav .item2 #search:focus-visible {
+  border: none;
+  outline: none;
+}
+
+aside {
+  position: fixed;
+  width: 80px;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 25px 0px;
+}
+aside .aside_brand {
+  padding-bottom: 40px;
+  width: auto;
+}
+aside .aside_brand i {
+  font-size: 50px;
+  color: grey;
+  text-align: center;
+}
+aside .wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 250px;
+}
+aside .wrapper ul {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 30px;
+}
+aside .wrapper ul li {
+  cursor: pointer;
+}
+aside .wrapper i {
+  color: grey;
+  font-size: 20px;
+}
+aside .wrapper .back i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+main {
+  padding-left: 110px;
+  padding-top: 130px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+#hero {
+  padding: 0px 0px 50px 0px;
+}
+#hero .gallery .add {
+  padding: 30px 0px;
+}
+#hero .gallery .add .addWrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+#hero .gallery .add .addWrapper .item1 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#hero .gallery .add .addWrapper .item1 img {
+  width: 25px;
+  margin-left: 10px;
+}
+#hero .gallery .add .addWrapper .item2 .add_btn {
+  border: none;
+  background-color: rgba(211, 211, 211, 0.301);
+  color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0px 7px;
+}
+#hero .gallery .add .addWrapper .item2 .add_btn .dropdown1 {
+  display: none;
+}
+#hero .gallery .add .addWrapper .item2 .top_btn {
+  border: none;
+  background-color: rgba(211, 211, 211, 0.301);
+  color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0px 7px;
+}
+#hero .gallery .brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-top: 20px;
+}
+#hero .gallery .brands .item {
+  padding: 10px 7px;
+  height: 150px;
+  border-radius: 50px;
+}
+#hero .gallery .brands .item:hover {
+  background-color: rgb(253, 237, 163);
+}
+#hero .gallery .brands .item img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+#hero .gallery .brands .item p {
+  font-weight: 600;
+}
+
+.landing .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+}
+.landing .wrapper .card {
+  padding: 20px;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 5px lightgray;
+  border-radius: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+.landing .wrapper .card h3 {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  word-spacing: 3px;
+  margin: 10px 0px;
+}
+.landing .wrapper .card p {
+  margin-bottom: 20px;
+}
+.landing .wrapper .card p i {
+  color: rgb(255, 230, 0);
+}
+.landing .wrapper .card .gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 20px;
+}
+.landing .wrapper .card .gallery .iteam {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.landing .wrapper .card .gallery .grey {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(168, 168, 168);
+  margin-bottom: 8px;
+}
+.landing .wrapper .card .gallery h6 {
+  margin-top: 5px;
+  font-size: 16px;
+}
+.landing .wrapper h2 {
+  font-size: 25px;
+  margin-top: 60px;
+}
+
+.foodImg {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}

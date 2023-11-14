@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./image/download.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Food and Beverages</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="item1">
+          <h2>Food</h2>
+        </div>
+        <div class="item2">
+          <button>
+            <i class="fa-solid fa-search"></i>
+          </button>
+          <input onkeyup="search()" type="text" name="search" id="search" placeholder="Search" />
+        </div>
+      </nav>
+    </header>
+    <aside>
+      <div class="aside_brand">
+        <i class="fa-solid fa-bowl-food"></i>
+      </div>
+      <div class="wrapper">
+        <div class="list">
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-pizza-slice"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-user"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-gg-circle"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-store"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="back">
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <section id="hero">
+        <div class="gallery">
+          <div class="add">
+            <div class="addWrapper">
+              <div class="item1">
+                <h2>Find the best foods</h2>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/3081/3081179.png"
+                  alt="..."
+                />
+              </div>
+              <div class="item2">
+                <button class="add_btn" onclick="add()">
+                  Resently added
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <div class="dropdown1">
+                    <input type="text" name="food" id="addFood1">
+                    <input type="text" name="food" id="addFood2">
+                    <input type="text" name="food" id="addFood3">
+                    <!-- <button>Add</button> -->
+                  </div>
+                </button>
+                <!-- <button class="top_btn" onclick="add()"> -->
+                  Top Sale
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <div class="dropdown2">
+                    
+                    <!-- <button>Add</button> -->
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="brands">
+            <div class="item all active">
+              <img
+                class="all"
+                src="https://cdn-icons-png.flaticon.com/512/5459/5459206.png"
+                alt="..."
+              />
+              <p class="foodName">All</p>
+            </div>
+            <div class="item pizza">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png"
+                alt="..."
+              />
+              <p class="foodName">Pizza</p>
+            </div>
+            <div class="item sushi">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3183/3183421.png"
+                alt="..."
+              />
+              <p class="foodName">Sushi</p>
+            </div>
+            <div class="item drinks">
+              <img
+                src="https://cdn3d.iconscout.com/3d/premium/thumb/soft-drink-3825014-3187541.png"
+                alt="..."
+              />
+              <p class="foodName">Drinks</p>
+            </div>
+            <div class="item cake">
+              <img
+                src="https://www.kindpng.com/picc/m/15-158539_cute-cake-icon-clipart-png-download-clip-art.png"
+                alt="..."
+              />
+              <p class="foodName">Cake</p>
+            </div>
+            <div class="item sushi">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1539/1539414.png"
+                alt="..."
+              />
+              <p class="foodName">Sushi</p>
+            </div>
+            <div class="item bread">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2565/2565417.png"
+                alt="..."
+              />
+              <p class="foodName">Bread</p>
+            </div>
+            <div class="item yogurt">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2592/2592587.png"
+                alt="..."
+              />
+              <p class="foodName">Yogurt</p>
+            </div>
+            <div class="item burger">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png"
+                alt="..."
+              />
+              <p class="foodName">Burger</p>
+            </div>
+            <div class="item bowl">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/641/641850.png"
+                alt="..."
+              />
+              <p class="foodName">Bowl</p>
+            </div>
+            <div class="item meat">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2836/2836580.png"
+                alt="..."
+              />
+              <p class="foodName">Meat</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="landing">
+        <div class="wrapper">
+          <div class="hamburger card food">
+            <img
+              class="foodImg"
+              src="https://media.istockphoto.com/id/1309352410/photo/cheeseburger-with-tomato-and-lettuce-on-wooden-board.jpg?b=1&s=170667a&w=0&k=20&c=1cK5UjNzhvbvqLX6sOG-lIjWv5FuRhfsbI0dIqNAla8="
+              alt="..."
+            />
+            <h3>Hamburger</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              4.9
+            </p>
+            <div class="gallery">
+              <div class="a">
+                <p class="grey">Price</p>
+                <h6>$ 30</h6>
+              </div>
+              <div class="iteam">
+                <p class="grey">Iteam</p>
+                <h6>300</h6>
+              </div>
+              <div class="item">
+                <p class="grey">Order</p>
+                <h6>125</h6>
+              </div>
+            </div>
+          </div>
+          <div class="lavash card food">
+            <img
+              class="foodImg"
+              src="https://img.freepik.com/free-photo/arabic-shaurma-with-stuffings-in-lavash_114579-3702.jpg?w=2000"
+              alt="..."
+            />
+            <h3>Lavash</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              5
+            </p>
+            <div class="gallery">
+              <div class="item">
+                <p class="grey">Price</p>
+                <h6>$ 35</h6>
+              </div>
+              <div class="iteam">
+                <p class="grey">Iteam</p>
+                <h6>350</h6>
+              </div>
+              <div class="item">
+                <p class="grey">Order</p>
+                <h6>205</h6>
+              </div>
+            </div>
+          </div>
+          <div class="hotdog card food">
+            <img
+              class="foodImg"
+              src="https://images.unsplash.com/photo-1613482084286-41f25b486fa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdCUyMGRvZ3xlbnwwfHwwfHw%3D&w=1000&q=80x`"
+              alt="..."
+            />
+            <h3>Hot Dog</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              4.8
+            </p>
+            <div class="gallery">
+              <div class="item">
+                <p class="grey">Price</p>
+                <h6>$ 24</h6>
+              </div>
+              <div class="iteam">
+                <p class="grey">Iteam</p>
+                <h6>400</h6>
+              </div>
+              <div class="item">
+                <p class="grey">Order</p>
+                <h6>310</h6>
+              </div>
+            </div>
+          </div>
+          <div class="sup card food">
+            <img
+              class="foodImg"
+              src="https://i.mycdn.me/i?r=AyH4iRPQ2q0otWIFepML2LxRpfr0DC-40YauINbF5xFFUw"
+              alt="..."
+            />
+            <h3>Sup</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              4.2
+            </p>
+            <div class="gallery">
+              <div class="item">
+                <p class="grey">Price</p>
+                <h6>$ 33</h6>
+              </div>
+              <div class="iteam">
+                <p class="grey">Iteam</p>
+                <h6>150</h6>
+              </div>
+              <div class="item">
+                <p class="grey">Order</p>
+                <h6>90</h6>
+              </div>
+            </div>
+          </div>
+          <div class="plov card food">
+            <img
+              class="foodImg"
+              src="https://storge.pic2.me/upload/565/5f3d1f13dbb311.14701374.jpg"
+              alt="..."
+            />
+            <h3>Plov</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              5
+            </p>
+            <div class="gallery">
+              <div class="item">
+                <p class="grey">Price</p>
+                <h6>$ 50</h6>
+              </div>
+              <div class="iteam">
+                <p class="grey">Iteam</p>
+                <h6>500</h6>
+              </div>
+              <div class="item">
+                <p class="grey">Order</p>
+                <h6>125</h6>
+              </div>
+            </div>
+          </div>
+          <div class="lagman card food">
+            <img
+              class="foodImg"
+              src="https://makepedia.uz/wp-content/uploads/2018/10/qovurma-lagmon.jpg"
+              alt="..."
+            />
+            <h3>Lagman</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              3.9
+            </p>
+            <div class="gallery">
+              <div class="item">
+                <p class="grey">Price</p>
+                <h6>$ 18</h6>
+              </div>
+              <div class="iteam">
+                <p class="grey">Iteam</p>
+                <h6>100</h6>
+              </div>
+              <div class="item">
+                <p class="grey">Order</p>
+                <h6>45</h6>
+              </div>
+            </div>
+          </div>
+          <div class="noryn card food">
+            <img
+              class="foodImg"
+              src="https://cdn.tasteatlas.com/images/dishes/1531b3a07bb04fd59ec581d9672b88aa.jpg"
+              alt="..."
+            />
+            <h3>Noryn</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              4.8
+            </p>
+            <div class="gallery">
+              <div class="item">
+                <p class="grey">Price</p>
+                <h6>$ 22</h6>
+              </div>
+              <div class="iteam">
+                <p class="grey">Iteam</p>
+                <h6>120</h6>
+              </div>
+              <div class="item">
+                <p class="grey">Order</p>
+                <h6>86</h6>
+              </div>
+            </div>
+          </div>
+          <div class="olivier card food">
+            <img
+              class="foodImg"
+              src="https://www.ahlanwasahlan.co.uk/wp-content/uploads/2015/05/Screenshot-2022-11-14-at-19.38.49-500x375.png"
+              alt="..."
+            />
+            <h3>Olivier</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              4.6
+            </p>
+            <div class="gallery">
+              <div class="item">
+                <p class="grey">Price</p>
+                <h6>$ 36</h6>
+              </div>
+              <div class="iteam">
+                <p class="grey">Iteam</p>
+                <h6>140</h6>
+              </div>
+              <div class="item">
+                <p class="grey">Order</p>
+                <h6>103</h6>
+              </div>
+            </div>
+          </div>
+          <div class="fish card food">
+            <img
+              class="foodImg"
+              src="https://zira.uz/wp-content/uploads/2018/12/ribnoe-xe.jpg"
+              alt="..."
+            />
+            <h3>Fish salad</h3>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              4.1
+            </p>
+            <div class="gallery">
+              <div class="item">
+                <p class="grey">Price</p>
+                <h6>$ 47</h6>
+              </div>
+              <div class="iteam">
+                <p class="grey">Iteam</p>
+                <h6>170</h6>
+              </div>
+              <div class="item">
+                <p class="grey">Order</p>
+                <h6>137</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
